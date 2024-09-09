@@ -1,0 +1,46 @@
+Enviado por Copilot:
+Claro! Você pode usar animações CSS para mover uma imagem da direita para a esquerda. Aqui está um exemplo simples de como fazer isso usando a propriedade @keyframes e a propriedade animation:
+
+HTML
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação CSS</title>
+    <style>
+        body {background: #000;}
+
+        .imagem {
+            position: absolute;
+            right: 0;
+            width: 600px;
+            height: 100px;
+            background: url('assets/img/whoosh__whoosh__whoo.svg') no-repeat center center;
+            background-size: cover;
+            animation: mover 5s linear infinite;
+        }
+
+        @keyframes mover {
+            from {
+                right: 0;
+            }
+            to {
+                right: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="imagem"></div>
+   
+</body>
+</html>
+Código gerado por IA. Reveja e utilize cuidadosamente. Mais informações sobre as FAQ.
+Neste exemplo:
+
+A classe .imagem define a posição inicial da imagem à direita.
+A propriedade animation aplica a animação chamada mover que dura 5 segundos e se repete infinitamente.
+A regra @keyframes mover define a animação, movendo a imagem da direita (0) para fora da tela à esquerda (100%).
+Você pode ajustar a duração e outros parâmetros conforme necessário. Se precisar de mais alguma coisa, estou aqui para ajudar!
